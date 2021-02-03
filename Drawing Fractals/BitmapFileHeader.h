@@ -14,5 +14,5 @@ namespace caveofprogramming {
 		int32_t dataOffset;
 	};
 }
-
+#pragma pack(pop)
 #endif // !BITMAPFILEHEADER_H_
