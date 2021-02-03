@@ -20,7 +20,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BitmapInfoHeader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
     <ClInclude Include="BitmapFileHeader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitmap.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
