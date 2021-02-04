@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 #include <vector>
 #include <utility>
 #include "Zoom.h"
@@ -26,8 +25,6 @@ namespace franyNamespace {
 			m_yCenter += (zoom.y - m_height / 2.0) * m_scale;
 
 			m_scale *= zoom.scale;
-
-			std::cout << m_xCenter << ", " << m_yCenter << ", " << m_scale << std::endl;
 		}
 		std::pair<double, double> doZoom(int x, int y) {
 

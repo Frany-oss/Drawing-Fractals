@@ -5,6 +5,7 @@
 #include "Bitmap.h"
 #include "Mandelbrot.h"
 #include "ZoomList.h"
+#include "FractalCreator.h"
 
 using namespace std;
 using namespace franyNamespace;
@@ -21,6 +22,8 @@ int main() {
 
 	ZoomList zoomList(WIDTH, HEIGHT);
 	zoomList.add(Zoom(WIDTH / 2, HEIGHT / 2, 4.0/WIDTH));
+	zoomList.add(Zoom(295, HEIGHT - 202, 0.1));
+	zoomList.add(Zoom(312, HEIGHT - 304, 0.1));
 
 	double min = 999999;
 	double max = -999999;
