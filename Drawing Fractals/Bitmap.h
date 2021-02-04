@@ -1,35 +1,31 @@
 #pragma once
 #include <iostream>
 #include <cstdint>
-#include <fstream>
-#include <memory>
+#include <fstream> // to write the Bitmap file
+//#include <memory>
 #include "BitmapFileHeader.h"
 #include "BitmapInfoHeader.h"
 
 
-using namespace caveofprogramming;
+using namespace franyNamespace;
 using namespace std;
 
-namespace caveofprogramming {
+namespace franyNamespace {
 	class Bitmap {
-	private:
-		int m_width{ 0 };
-		int m_height{ 0 };
+		signed int m_width = 0;
+		signed int m_height = 0;
 		unique_ptr<uint8_t[]> m_pPixels{nullptr};
 	public:
-		Bitmap(int width, int height) : m_width(width), m_height(height), m_pPixels(new uint8_t[width * height * 3]{}) { }
+		Bitmap(signed int width, signed int height) : m_width(width), m_height(height), m_pPixels(new uint8_t[width * height * 3]{}) { }
 
 		bool writeBitmap(std::string fileName) {
-
-			// Information of the file
-			BitmapFileHeader fileHeader;
-			// Information of the bitmap
-			BitmapInfoHeader infoHeader;
+			
+			BitmapFileHeader fileHeader; // Information of the file
+			BitmapInfoHeader infoHeader; // Information of the bitmap
 
 			// The size of the file
 			fileHeader.fileSize = sizeof(BitmapFileHeader) + sizeof(BitmapInfoHeader) + (m_width * m_height * 3);
-			// The distances from the beginning of the file to the actuall data
-			fileHeader.dataOffset = sizeof(BitmapFileHeader) + sizeof(BitmapInfoHeader);
+			fileHeader.dataOffset = sizeof(BitmapFileHeader) + sizeof(BitmapInfoHeader); // The distances from the beginning of the file to the actuall data
 
 			infoHeader.width = m_width;
 			infoHeader.height = m_height;

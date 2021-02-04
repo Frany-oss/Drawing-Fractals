@@ -6,7 +6,7 @@
 using namespace std;
 
 #pragma pack(2)
-namespace caveofprogramming {
+namespace franyNamespace {
 	struct BitmapInfoHeader {
 		int32_t headerSize{ 40 };
 		int32_t width;

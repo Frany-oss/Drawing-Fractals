@@ -29,5 +29,8 @@
     <ClInclude Include="Bitmap.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Mandelbrot.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
