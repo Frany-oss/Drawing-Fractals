@@ -38,7 +38,7 @@ namespace franyNamespace {
 
 			file.write((char*)&fileHeader, sizeof(fileHeader));
 			file.write((char*)&infoHeader, sizeof(infoHeader));
-			file.write((char*)m_pPixels.get(), (m_height * m_width * 3));
+			file.write((char*)m_pPixels.get(), (m_height * m_width * 3.0));
 
 			file.close();
 

@@ -32,5 +32,11 @@
     <ClInclude Include="Mandelbrot.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Zoom.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZoomList.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
