@@ -1,6 +1,5 @@
 #include <iostream>
 #include "FractalCreator.h"
-#include "RGB.h"
 
 int main() {
 
