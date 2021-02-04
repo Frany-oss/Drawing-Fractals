@@ -41,5 +41,8 @@
     <ClInclude Include="FractalCreator.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="RGB.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
