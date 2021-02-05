@@ -12,7 +12,7 @@ int main() {
 	fractalCreator.addColorRange(0.08, RGB(255, 215, 0));
 	fractalCreator.addColorRange(1.0, RGB(255, 255, 255));
 
-	fractalCreator.run("Fractal.bmp");
+	fractalCreator.run("Fractal_Zoom2.bmp");
 
 	std::cout << "Finished!!" << std::endl;
 	return 0;
